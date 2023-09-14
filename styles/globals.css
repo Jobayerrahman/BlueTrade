@@ -2,11 +2,13 @@
   --primary-background: #F0F8FF;
   --secondary-background: #F0F8FF;
   --primary-barBackground: #FFFFFF;
+  --primary-colorText: #000;
 }
 [data-theme='dark']{
   --primary-background: #8ABEEB38;
   --secondary-background: #12131A;
   --primary-barBackground: #1C1C25;
+  --primary-colorText: #fff;
 }
 
 

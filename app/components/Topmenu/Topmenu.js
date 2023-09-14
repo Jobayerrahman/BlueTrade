@@ -1,20 +1,45 @@
 import React from 'react';
-import styles from './Topmenu.module.css'
+import styles from './Topmenu.module.css';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
+import profile from '../../../public/Image/profile.png';
+import Image from 'next/image';
+import { faMagnifyingGlass, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
 function Topmenu(props) {
+    const [search, setSearch] = useState('');
+
+    const handleInput = (e) =>{
+        if(e.target.type ==='text'){
+            const inputValue = e.target.value;
+            setSearch(inputValue);
+        }
+    }
     return (
         <div className={styles.topMenuWrapper}>
             <div className={styles.searchWrapper}>
-                <input value="Search"/>
+                <input className={styles.searchInput} type="text" value={search} onChange={handleInput} placeholder='Search...'/>
+                <FontAwesomeIcon className={styles.searchIcon} icon={faMagnifyingGlass} />
             </div>
             <div className={styles.menuWrapper}>
                 <div className={styles.menuIconWrapper}>
                     <FontAwesomeIcon className={styles.menuIcon} icon={faBell} />
+                    <span className={styles.activeCircle}></span>
                 </div>
                 <div className={styles.profileWrapper}>
-                    <h2>Profile</h2>
+                    <div className={styles.profileInfo}>
+                        <div className={styles.profileImageWrapper}>
+                            <Image className={styles.profileImage}  src={profile} alt=''/>
+                        </div>
+                        <div className={styles.profileDetails}>
+                            <h2>Andy Warhol</h2>
+                            <span>andywarhol@mail.com</span>
+                        </div>
+                    </div>
+                    <div className={styles.profileDropIcon}>
+                        <FontAwesomeIcon className={styles.ellipsisIcon} icon={faEllipsisVertical} />
+                    </div>
                 </div>
             </div>
         </div>
