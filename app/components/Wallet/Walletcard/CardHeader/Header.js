@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './Header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-function Header({icon=null, title=null, subTitle=null}) {
+import { useContext } from 'react';
+import WalletContext from '@/app/libs/Context/WalletContext';
+
+function Header() {
+    const context = useContext(WalletContext);
+    const { icon, title, subTitle } = context;
     return (
         <div className={styles.headerWrapper}>
             <div className={styles.walletIconWrapper}>
