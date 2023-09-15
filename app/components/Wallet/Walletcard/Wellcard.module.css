@@ -1,0 +1,20 @@
+.wellCardWrapper{
+    background: #fff;
+    padding: 10px;
+    width: 270px;
+    height: 174px;
+    border-radius: 12px;
+    margin: 0px 10px;
+}
+
+@media only screen and (max-width: 2000px) {
+    .searchInput{
+        width: 302px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .searchInput{
+        width: 270px;
+    }
+}

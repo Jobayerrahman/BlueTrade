@@ -1,0 +1,47 @@
+.footerWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerTitle{
+    font-size: 13px;
+    font-weight: 500;
+    color: #626D7D;
+}
+
+.footerAmountInc{
+    font-size: 13px;
+    font-weight: 600;
+    color: #219653;
+}
+
+.footerAmountDec{
+    font-size: 13px;
+    font-weight: 600;
+    color: #EB5757;
+}
+
+.footerPercentageInc{
+    background-color: #21965333;
+    padding: 7px;
+    border-radius: 60px;
+}
+
+.footerPercentageInc h2{
+    font-size: 11px;
+    font-weight: 600;
+    color: #219653;
+}
+
+.footerPercentageDec{
+    background-color: #96212133;
+    padding: 7px;
+    border-radius: 60px;
+}
+
+.footerPercentageDec h2{
+    font-size: 11px;
+    font-weight: 600;
+    color: #EB5757;
+}

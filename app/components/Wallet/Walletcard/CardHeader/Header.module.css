@@ -1,0 +1,33 @@
+.headerWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.walletIconWrapper{
+    padding: 10px;
+    background: #2F80ED33;
+    border-radius: 8px;
+}
+
+.walletIcon{
+    width: 27.5px;
+    height: 24.19px;
+    color: #3380FF;
+}
+
+.headerInfo{
+    margin: 0px 10px;
+}
+
+.headerInfo h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.headerInfo span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #626D7D;
+}
