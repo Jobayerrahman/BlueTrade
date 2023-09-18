@@ -3,14 +3,18 @@ import Topmenu from '@/app/components/Topmenu/Topmenu';
 import Wallet from '@/app/components/Wallet/Wallet';
 import styles from './DeshboardPage.module.css' 
 import React from 'react';
+import Assets from '@/app/components/Assets/Assets';
 
 function DeshboardPage(props) {
     return (
-        <div className={styles.dashboardMenu}>
+        <div className={styles.dashboardWrapper}>
             <Sidebar/>
-            <div className={styles.dashboardWrapper}>
+            <div className={styles.dashboardContentWrapper}>
                 <Topmenu/>
                 <Wallet/>
+                <div className={styles.dashboardContentCardsWapper}>
+                    <Assets/>
+                </div>
             </div>
         </div>
     );

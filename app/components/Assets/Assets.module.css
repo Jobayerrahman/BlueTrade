@@ -1,0 +1,36 @@
+@import '../../../styles/Home.module.css';
+
+
+.assetsWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    background: var(--primary-barBackground);
+    width: 315.07px;
+    height: 301px;
+    border-radius: 15px;
+}
+
+.assetsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerIconWrapper{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #7F8A9B4D;
+    display: flex;
+}
+
+.menuIcon{
+    width: 15.83px;
+    height: 15.83px;
+    font-weight: 500;
+}
+
+.assetsBody{
+    padding: 10px 20px;
+}

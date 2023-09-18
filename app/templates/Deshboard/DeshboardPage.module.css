@@ -1,11 +1,17 @@
-.dashboardMenu{
+.dashboardWrapper{
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.dashboardWrapper{
+.dashboardContentWrapper{
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+}
+
+.dashboardContentCardsWapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
