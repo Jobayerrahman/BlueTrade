@@ -25,10 +25,9 @@ function Assets() {
         cutout: 70,
         plugins: {
             legend: {
-              position: 'bottom',
-              labels: {
+            position: 'bottom',
+            labels: {
                     boxWidth: 10,
-                    boxHeigth: 10,
                     borderRadius: 5,
                     font: {
                         size: 12,
