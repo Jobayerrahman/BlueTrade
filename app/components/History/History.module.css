@@ -1,0 +1,109 @@
+@import '../../../styles/Home.module.css';
+
+.historyWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    background: var(--primary-barBackground);
+    width: 465px;
+    height: 301px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.historyHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historyHeader button{
+    width: 60px;
+    height: 26px;
+    border: 1px solid #eeeeee;
+    font-size: 10px;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 7px;
+    padding: 5px 10px;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.historyBody{
+    padding: 10px 0px;
+}
+
+.historyGrowthStatusInc{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #21965333;
+}
+
+.historyGrowthStatusDec{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #EB575733;
+}
+
+.statusIcon{
+    width: 10px;
+    height: 10px;
+    color: #219653;
+}
+
+.Inc{
+    color: #219653;
+}
+
+.Dec{
+    color: #EB5757;
+}
+
+
+.historyBody table{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.historyBody tr {
+    text-align: center;
+}
+
+
+.historyBody td {
+    padding: 10px 0px;
+    border-bottom: 1px solid #0000001A;
+    text-align: center;
+}
+
+.historyBody td>h4 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.payStatusPadding{
+    background-color: #F2C94C33;
+    border-radius: 6px;
+    width: 58px;
+    height: 23px;
+    border: none;
+    color: #F2994A;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.payStatusSuccess{
+    background-color: #26AB5F33;
+    border-radius: 6px;
+    width: 58px;
+    height: 23px;
+    border: none;
+    color: #219653;
+    font-size: 10px;
+    font-weight: 600;
+}

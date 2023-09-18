@@ -5,6 +5,7 @@ import styles from './DeshboardPage.module.css'
 import React from 'react';
 import Assets from '@/app/components/Assets/Assets';
 import Convert from '@/app/components/Convert/Convert';
+import History from '@/app/components/History/History';
 
 function DeshboardPage(props) {
     return (
@@ -16,6 +17,7 @@ function DeshboardPage(props) {
                 <div className={styles.dashboardContentCardsWapper}>
                     <Assets/>
                     <Convert/>
+                    <History/>
                 </div>
             </div>
         </div>
