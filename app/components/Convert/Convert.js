@@ -37,7 +37,7 @@ function Convert() {
                 <div className={styles.currencyDropdownUSDT}>
                     <div onClick={handleUSDTOpen} className={styles.currencyDropdownHeader}>
                         USDT 
-                        <FontAwesomeIcon className={styles.menuIcon} icon={faCaretDown} />
+                        <FontAwesomeIcon className={styles.menuIcon} icon={faCaretDown} style={{ color: '#26AB5F' }}/>
                     </div>
                     {openUSDT ? (
                         <div className={styles.currencyDropdownBody}>
@@ -53,7 +53,7 @@ function Convert() {
                 <div className={styles.currencyDropdownBTC}>
                     <div onClick={handleBTCOpen} className={styles.currencyDropdownHeader}>
                         BTC
-                        <FontAwesomeIcon className={styles.menuIcon} icon={faCaretDown} />
+                        <FontAwesomeIcon className={styles.menuIcon} icon={faCaretDown} style={{ color: '#FF7C04' }}/>
                     </div>
                     {openBTC ? (
                         <div className={styles.currencyDropdownBody}>

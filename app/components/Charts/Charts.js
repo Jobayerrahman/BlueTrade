@@ -2,13 +2,71 @@ import React from 'react';
 import styles from './Charts.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCaretDown} from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend,
+  } from 'chart.js';
+  import { Bar } from 'react-chartjs-2';
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+  );
 
+  import { faker } from '@faker-js/faker';
+  
+  
 function Charts() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(!open);
     };
+        
+    const options = {
+        responsive: true,
+        plugins: {
+        legend: {
+            display: false,
+        },
+        title: {
+            display: false,
+        },
+        },
+        responsive: true,
+        scales: {
+        x: {
+        stacked: true,
+        },
+        y: {
+        stacked: true,
+        },
+        },
+    };
+        
+    const labels = ['Jul 18', 'Jul 19', 'Jul 20', 'Jul 21'];
+    
+    const data = {
+        labels,
+          datasets: [
+            {
+              data: labels.map(() => faker.datatype.number({ min: 19000, max: 23000 })),
+              backgroundColor: '#032658',
+            },
+            {
+              data: labels.map(() => faker.datatype.number({ min: 19000, max: 23000 })),
+              backgroundColor: '#4D91FF',
+            },
+          ],
+    };
+        
     return (
         <div className={styles.chartsWrapper}>
             <div className={styles.chartsHeader}>
@@ -74,6 +132,9 @@ function Charts() {
                     <button>1W</button>
                     <button>1M</button>
                 </div>
+            </div>
+            <div className={styles.chartsBody}>
+                <Bar data={data} options={options}/>
             </div>
         </div>
     );
