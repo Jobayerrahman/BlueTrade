@@ -20,6 +20,7 @@
     border-radius: 57px;
     border: 1.3px solid #C4CACD66;
     padding: 0px 40px;
+    background-color: var(--secondary-background);
 }
 
 .searchIcon{

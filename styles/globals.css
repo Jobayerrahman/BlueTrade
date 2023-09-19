@@ -3,12 +3,16 @@
   --secondary-background: #FFFFFF;
   --primary-colorText: #000;
   --border-color: #f7f7f714;
+  --active-navBackground: #D5E6FB;
+  --active-navBarTitle: #0060FF;
 }
 [data-theme='dark']{
   --primary-background: #12131A;
   --secondary-background: #1C1C25;
   --primary-colorText: #fff;
   --border-color: #C0C5CB14;
+  --active-navBackground: #062141;
+  --active-navBarTitle: #1A71FF;
 }
 
 

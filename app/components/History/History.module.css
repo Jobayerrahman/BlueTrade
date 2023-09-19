@@ -25,13 +25,14 @@
 .historyHeader button{
     width: 60px;
     height: 26px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #7F8A9B4D;
     font-size: 10px;
     font-weight: 600;
     align-items: center;
     border-radius: 7px;
     padding: 5px 10px;
-    background: #FFF;
+    background: var(--secondary-background);
+    color: var(--primary-colorText);
     cursor: pointer;
 }
 

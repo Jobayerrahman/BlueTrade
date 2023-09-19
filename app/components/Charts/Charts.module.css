@@ -9,3 +9,116 @@
     border-radius: 15px;
     margin-bottom: 10px;
 }
+
+.chartsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/****************** Start Dropdown ********************/
+
+.chartsDropdown{
+    background: var(--primary-background);
+    padding: 15px 20px;
+    border-radius: 12px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.chartsDropdownHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chartsDropdownBody{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chartsDropdownItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+    border-bottom: 1px solid #7F8A9B4D;
+    cursor: pointer;
+}
+
+.chartsDropdownCurrency{
+    margin-right: 40px;
+}
+
+.chartsDropdownCurrency h2{
+    color: var(--primary-colorText);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chartsDropdownCurrency span{
+    color: #626D7D;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.chartsDropdownAmount{
+    margin-right: 10px;
+}
+
+.chartsDropdownAmount h2{
+    color: var(--primary-colorText);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chartsDropdownPercentage{
+    padding: 5px;
+    background-color: #26AB5F33;
+    border-radius: 61.23px;
+    text-align: center;
+}
+
+.chartsDropdownPercentage h4{
+    color: #26AB5F;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.menuIcon{
+    width: 15.83px;
+    height: 15.83px;
+    font-weight: 500;
+    color: var(--primary-colorText);
+}
+
+/******************* End Dropdown ******************/
+
+.chartsMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.chartsMenu button{
+    background-color: var(--primary-background);
+    border-radius: 7.4px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: none;
+    color: var(--primary-colorText);
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.chartsMenu button.active{
+    color: #0060FF;
+}

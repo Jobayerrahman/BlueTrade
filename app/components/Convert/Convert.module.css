@@ -33,6 +33,7 @@
     width: 15.83px;
     height: 15.83px;
     font-weight: 500;
+    color: var(--primary-colorText);
 }
 
 .convertCurrencyInputWrapper{
@@ -40,6 +41,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .currencyInput{
@@ -50,19 +52,59 @@
     border: none;
 }
 
-.currencyButton{
+
+/************** Dropdown ****************/
+.currencyDropdownUSDT{
+    display: flex;
+    flex-direction: column;
+    padding: 8.5px;
+    border-radius: 7px;
+    color: #26AB5F;
+    background-color: #C7E4DB; 
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.currencyDropdownBTC{
+    display: flex;
+    flex-direction: column;
+    padding: 8.5px;
+    border-radius: 7px;
+    color:#FF7C04;
+    background-color: #FCF4DB;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.currencyDropdownHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8.5px;
-    width: 62px;
-    height: 31px;
-    border-radius: 7px;
-    margin: -80px;
-    border: none;
     font-size: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
+
+.currencyDropdownBody{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.currencyDropdownItem{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 7px 0px;
+    border-bottom: 1px solid #bfc4c1;
+    cursor: pointer;
+}
+
+/************** Dropdown ****************/
 
 .convertButton{
     width: 100%;

@@ -42,8 +42,8 @@
 }
 
 .sidebarMenu ul>li.active{
-    background-color: var(--secondary-background);
-    color: #0060FF;
+    background-color: var(--active-navBackground);
+    color: var(--active-navBarTitle);
 }
 
 .menuIcon{
