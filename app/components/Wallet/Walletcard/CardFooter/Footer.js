@@ -7,10 +7,10 @@ function Footer() {
     const { periodicalTitle, periodicalAmount, periodicalPercentage, periodicalStatus } = context;
     return (
         <div className={styles.footerWrapper}>
-            <h2 className={styles.footerTitle}>{periodicalTitle}</h2>
-            <h2 className={ periodicalStatus ? styles.footerAmountInc : styles.footerAmountDec }>{periodicalAmount}</h2>
+            <h4 className={styles.footerTitle}>{periodicalTitle}</h4>
+            <h4 className={ periodicalStatus ? styles.footerAmountInc : styles.footerAmountDec }>{periodicalAmount}</h4>
             <div className={ periodicalStatus ? styles.footerPercentageInc : styles.footerPercentageDec }>
-                <h2>{periodicalPercentage}</h2>
+                <h4>{periodicalPercentage}</h4>
             </div>
         </div>
     );

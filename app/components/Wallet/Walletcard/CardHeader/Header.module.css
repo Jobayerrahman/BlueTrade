@@ -1,3 +1,5 @@
+@import '../../../../../styles/Home.module.css';
+
 .headerWrapper{
     display: flex;
     justify-content: flex-start;
@@ -24,6 +26,7 @@
 .headerInfo h2{
     font-size: 16px;
     font-weight: 600;
+    color: var(--primary-colorText);
 }
 
 .headerInfo span{

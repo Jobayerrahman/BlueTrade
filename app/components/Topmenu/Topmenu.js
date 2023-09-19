@@ -5,10 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import profile from '../../../public/Image/profile.png';
 import Image from 'next/image';
+import ThemeContext from '@/app/libs/Context/ThemeContext';
+import { useContext } from 'react';
 import { faMagnifyingGlass, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
 function Topmenu(props) {
     const [search, setSearch] = useState('');
+
+    const context = useContext(ThemeContext);
+    const { mode, switchTheme } = context;
 
     const handleInput = (e) =>{
         if(e.target.type ==='text'){
@@ -23,8 +28,11 @@ function Topmenu(props) {
                 <FontAwesomeIcon className={styles.searchIcon} icon={faMagnifyingGlass} />
             </div>
             <div className={styles.menuWrapper}>
+                <div>
+                    <FontAwesomeIcon className={styles.themeIcon} onClick={switchTheme} icon={mode} />
+                </div>
                 <div className={styles.menuIconWrapper}>
-                    <FontAwesomeIcon className={styles.menuIcon} icon={faBell} />
+                    <FontAwesomeIcon className={styles.menuIcon} onClick={switchTheme} icon={faBell} />
                     <span className={styles.activeCircle}></span>
                 </div>
                 <div className={styles.profileWrapper}>

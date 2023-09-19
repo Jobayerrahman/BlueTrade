@@ -6,6 +6,8 @@ import React from 'react';
 import Assets from '@/app/components/Assets/Assets';
 import Convert from '@/app/components/Convert/Convert';
 import History from '@/app/components/History/History';
+import Markets from '@/app/components/Markets/Markets';
+import Charts from '@/app/components/Charts/Charts';
 
 function DeshboardPage(props) {
     return (
@@ -15,6 +17,8 @@ function DeshboardPage(props) {
                 <Topmenu/>
                 <Wallet/>
                 <div className={styles.dashboardContentCardsWapper}>
+                    <Charts/>
+                    <Markets/>
                     <Assets/>
                     <Convert/>
                     <History/>

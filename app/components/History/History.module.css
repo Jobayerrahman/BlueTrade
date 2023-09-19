@@ -5,7 +5,7 @@
     flex-direction: column;
     padding: 20px;
     margin: 10px;
-    background: var(--primary-barBackground);
+    background: var(--secondary-background);
     width: 465px;
     height: 301px;
     border-radius: 12px;
@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.historyHeader h2{
+    color: var(--primary-colorText);
 }
 
 .historyHeader button{
@@ -52,15 +56,15 @@
 .statusIcon{
     width: 10px;
     height: 10px;
-    color: #219653;
+    color: #219653 !important;
 }
 
 .Inc{
-    color: #219653;
+    color: #219653 !important;
 }
 
 .Dec{
-    color: #EB5757;
+    color: #EB5757 !important;
 }
 
 
@@ -84,6 +88,7 @@
 .historyBody td>h4 {
     font-size: 12px;
     font-weight: 600;
+    color: var(--primary-colorText);
 }
 
 .payStatusPadding{

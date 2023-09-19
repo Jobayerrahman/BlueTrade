@@ -1,5 +1,6 @@
 .main {
-  min-height: 100vh;
+  min-height: auto;
+  background-color: var(--primary-background);
 }
 
 /* Tablet and Smaller Desktop */

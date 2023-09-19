@@ -1,0 +1,121 @@
+@import '../../../styles/Home.module.css';
+
+.marketsWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    background: var(--secondary-background);
+    width: 478px;
+    height: 360px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.marketHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marketHeader{
+    color: var(--primary-colorText);
+}
+
+.marketMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.marketMenu button{
+    background-color: var(--primary-background);
+    border-radius: 7.4px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: none;
+    color: var(--primary-colorText);
+    margin: 0px 5px;
+}
+
+.marketMenu button.active{
+    color: #0060FF;
+}
+
+.marketsBody{
+    padding: 10px 5px;
+    overflow-y: scroll;
+    margin: 10px 0px;
+}
+
+.marketsBody::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 20px;
+}
+  /* Track */
+.marketsBody::-webkit-scrollbar-track {
+    background: var(--primary-background); 
+  }
+   
+  /* Handle */
+.marketsBody::-webkit-scrollbar-thumb {
+    background: var(--secondary_color); 
+  }
+  
+  /* Handle on hover */
+.marketsBody::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary_color); 
+  }
+
+.marketsBody table{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.marketsBody tr {
+    text-align: center;
+}
+
+
+.marketsBody td {
+    padding: 10px 0px;
+    border-bottom: 1px solid #0000001A;
+    text-align: center;
+}
+
+.marketsBody td>h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-colorText);
+}
+
+
+.Inc{
+    color: #219653 !important;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #21965333;
+}
+
+.Dec{
+    color: #EB5757 !important;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #EB575733;
+}
+
+.marketView{
+    width: 60px;
+    height: 26px;
+    border: 1px solid #d4d4d4;
+    font-size: 10px;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 7px;
+    padding: 5px 10px;
+    background: var(--secondary-background);
+    color: var(--primary-colorText);
+    cursor: pointer;
+}

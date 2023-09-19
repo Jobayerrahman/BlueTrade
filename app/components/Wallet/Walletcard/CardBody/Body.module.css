@@ -1,6 +1,12 @@
+@import '../../../../../styles/Home.module.css';
+
 .bodyWrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.bodyWrapper h2{
+    color: var(--primary-colorText);
 }

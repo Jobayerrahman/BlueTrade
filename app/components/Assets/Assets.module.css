@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 20px;
     margin: 10px;
-    background: var(--primary-barBackground);
+    background: var(--secondary-background);
     width: 315.07px;
     height: 301px;
     border-radius: 15px;
@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.assetsHeader h2{
+    color: var(--primary-colorText);
 }
 
 .headerIconWrapper{

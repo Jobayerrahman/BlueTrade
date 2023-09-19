@@ -2,10 +2,10 @@
 
 .sidebarWrapper{
     width: 300px;
-    height: 100%;
-    background-color: var(--primary-barBackground);
+    height: auto;
+    background-color: var(--secondary-background);
     min-height: 100vh;
-    border-right: 1px solid #f1f1f1;
+    border-right: 1px solid var(--border-color);
     padding: 0px 35px;
     text-align: center;
 }
@@ -42,7 +42,7 @@
 }
 
 .sidebarMenu ul>li.active{
-    background-color: #D5E6FB;
+    background-color: var(--secondary-background);
     color: #0060FF;
 }
 
@@ -51,11 +51,13 @@
     height: 15.83px;
     margin-right: 10px;
     font-weight: 500;
+    color: var(--primary-colorText);
 }
 
 .sidebarMenu ul>li h2{
     font-size: 18px;
     font-weight: 500;
+    color: var(--primary-colorText);
 }
 
 .sidebarDivider{
