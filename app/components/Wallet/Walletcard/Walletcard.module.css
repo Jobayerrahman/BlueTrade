@@ -4,21 +4,33 @@
     width: 270px;
     height: 174px;
     border-radius: 12px;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 
 .wellCardWrapper h2{
     color: var(--primary-colorText);
 }
 
-@media only screen and (max-width: 2000px) {
-    .searchInput{
-        width: 302px;
+@media screen and (min-width: 1441px) {
+    .wellCardWrapper{
+        width: 370px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .searchInput{
-        width: 270px;
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .wellCardWrapper{
+        width: 260px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .wellCardWrapper{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wellCardWrapper{
+        width: 100%;
     }
 }

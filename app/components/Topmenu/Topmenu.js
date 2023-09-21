@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './Topmenu.module.css';
-import { useState } from 'react';
+import Image from 'next/image';
+import { useState, useContext } from 'react';
+import profile from '../../../public/Image/profile.png';
+import ThemeContext from '@/app/libs/Context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import profile from '../../../public/Image/profile.png';
-import Image from 'next/image';
-import ThemeContext from '@/app/libs/Context/ThemeContext';
-import { useContext } from 'react';
 import { faMagnifyingGlass, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
 function Topmenu(props) {

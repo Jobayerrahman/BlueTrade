@@ -6,8 +6,30 @@
     background-color: var(--secondary-background);
     min-height: 100vh;
     border-right: 1px solid var(--border-color);
-    padding: 0px 35px;
+    padding: 0px 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 1s;
+}
+
+.closeSideBarWrapper{
+    width: 90px;
+    height: auto;
+    background-color: var(--secondary-background);
+    min-height: 100vh;
+    border-right: 1px solid var(--border-color);
+    padding: 0px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 1s;
+}
+
+.closeSideBar{
+    display: none;
 }
 
 .sidebarHeader{
@@ -21,6 +43,7 @@
 .sidebarHeader span{
     color: var(--primary-colorText);
 }
+
 
 .sidebarMenu{
     padding: 35px 0px;
@@ -41,6 +64,17 @@
     cursor: pointer;
 }
 
+.closeSideBarMenu ul>li{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8.83px;
+    cursor: pointer;
+}
+
 .sidebarMenu ul>li.active{
     background-color: var(--active-navBackground);
     color: var(--active-navBarTitle);
@@ -52,6 +86,15 @@
     margin-right: 10px;
     font-weight: 500;
     color: var(--primary-colorText);
+    transition: width 1s, height 1s;
+}
+
+.closeMenuIcon{
+    width: 18.83px;
+    height: 18.83px;
+    font-weight: 500;
+    color: var(--primary-colorText);
+    transition: width 1s, height 1s;
 }
 
 .sidebarMenu ul>li h2{
@@ -60,9 +103,41 @@
     color: var(--primary-colorText);
 }
 
+.closeSideBarMenu ul>li h2{
+    display: none;
+}
+
 .sidebarDivider{
     width: 80%;
     height: 1px;
     background-color: #E8EAECC7;
     margin: 0px 20px;
+}
+
+.sideBarFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.closeSideBarFooter{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.sideBarToggleIcon{
+    width: 14px;
+    height: 14px;
+    color: #C4CACD;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+}
+
+.closeSideBarToggleIcon{
+    width: 18.83px;
+    height: 18.83px;
+    color: #C4CACD;
+    cursor: pointer;
+    transition: width 1s, height 1s;
 }

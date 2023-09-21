@@ -13,15 +13,17 @@ function DeshboardPage(props) {
     return (
         <div className={styles.dashboardWrapper}>
             <Sidebar/>
-            <div className={styles.dashboardContentWrapper}>
+            <div className={styles.dashboardMenuWrapper}>
                 <Topmenu/>
-                <Wallet/>
-                <div className={styles.dashboardContentCardsWapper}>
-                    <Charts/>
-                    <Markets/>
-                    <Assets/>
-                    <Convert/>
-                    <History/>
+                <div className={styles.dashboardContentsWrapper}>
+                    <Wallet/>
+                    <div className={styles.dashboardContentCardsWrapper}>
+                        <Charts/>
+                        <Markets/>
+                        <Assets/>
+                        <Convert/>
+                        <History/>
+                    </div>
                 </div>
             </div>
         </div>
