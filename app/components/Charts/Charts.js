@@ -33,36 +33,36 @@ function Charts() {
     const options = {
         responsive: true,
         plugins: {
-        legend: {
-            display: false,
-        },
-        title: {
-            display: false,
-        },
+            legend: {
+                display: false,
+            },
+            title: {
+                display: false,
+            },
         },
         responsive: true,
         scales: {
-        x: {
-        stacked: true,
-        },
-        y: {
-        stacked: true,
-        },
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true,
+            },
         },
     };
         
-    const labels = ['Jul 18', 'Jul 19', 'Jul 20', 'Jul 21'];
+    const labels = ['Jul 18', 'Jul 20', 'Jul 22', 'Jul 24', 'Jul 26'];
     
     const data = {
         labels,
-          datasets: [
+        datasets: [
             {
               data: labels.map(() => faker.datatype.number({ min: 19000, max: 23000 })),
               backgroundColor: '#032658',
             },
             {
               data: labels.map(() => faker.datatype.number({ min: 19000, max: 23000 })),
-              backgroundColor: '#4D91FF',
+              backgroundColor: '#0c428f',
             },
           ],
     };
@@ -134,7 +134,7 @@ function Charts() {
                 </div>
             </div>
             <div className={styles.chartsBody}>
-                <Bar data={data} options={options}/>
+                <Bar data={data} options={options} height={80}/>
             </div>
         </div>
     );
